@@ -21,7 +21,6 @@ const handleRegister =(req,res, db, bcrypt)=>{
             })
             .then(user => {
                 res.json(user[0])
-                console.log(user[0])
             })
         })
         .then(trx.commit)
